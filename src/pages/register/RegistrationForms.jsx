@@ -7,6 +7,7 @@ import Summary from "./Summary";
 import { StepperContext } from "../../context/stepperContext";
 import NavBarTwo from "../../component/navbar/NavBarTwo";
 import userData from "../../data.json";
+import { useNavigate } from "react-router-dom";
 
 const Forms = () => {
   const [formData, setFormData] = useState({
@@ -15,13 +16,14 @@ const Forms = () => {
     fullName: { value: "", touched: false, error: false },
     email: { value: "", touched: false, error: false },
     phone: { value: 0, touched: false, error: false },
-    address: { value: "", touched: false, error: false },
+    password: { value: "", touched: false, error: false },
     dateOfBirth: { value: "", touched: false, error: false },
     age: { value: 0, touched: false, error: false },
     numberOfChildren: { value: 0, touched: false, error: false },
   });
   const [currentStep, setCurrentStep] = useState(1);
   const steps = ["Parent Info", "student info", "Summary"];
+  const navigate = useNavigate();
 
   const displayStep = (steps) => {
     switch (steps) {
@@ -42,21 +44,26 @@ const Forms = () => {
     if (
       !formData.fullName.value ||
       !formData.email.value ||
-      !formData.address.value ||
+      !formData.password.value ||
       !formData.phone.value
     ) {
-      alert('All Inputs fileds must be complete!')
+      alert("All Inputs fileds must be complete!");
     } else if (newStep > 0 && newStep <= steps.length) {
-        userData.forEach((user) => {
-          if (
-            user.email === formData.email.value ||
-            user.phone === formData.phone.value
-          ) {
-            alert("Email already exist");
-          }
+      userData.forEach((user) => {
+        if (
+          user.email === formData.email.value ||
+          user.phone === formData.phone.value
+        ) {
+          alert("Email already exist");
+          setTimeout(() => {
+            navigate("/login");
+          }, 1000);
+        }
+        setTimeout(() => {
           setCurrentStep(newStep);
-        });
-      }
+        }, 2000);
+      });
+    }
   };
 
   return (
@@ -81,6 +88,8 @@ const Forms = () => {
               steps={steps}
               currentStep={currentStep}
               handleClick={handleClick}
+              formData={formData}
+              setFormData={setFormData}
             />
           </div>
         </div>

@@ -15,7 +15,7 @@ const Summary = ({ formData }) => {
           </div>
           <div className="flex items-center justify-between space-y-2">
             <p>{formData.phone.value}</p>
-            <p>{formData.address.value}</p>
+            <p>XXXXXXXXXXXX</p>
           </div>
         </div>
         <div className="mt-2">

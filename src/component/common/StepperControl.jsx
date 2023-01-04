@@ -2,15 +2,29 @@ import React, { useState } from "react";
 import Button from "../button/Button";
 import Modal from "../../component/common/Modal";
 import { Link } from "react-router-dom";
+import userData from "../../data.json";
 
-const StepperControl = ({ steps, currentStep, handleClick }) => {
+const StepperControl = ({
+  steps,
+  currentStep,
+  handleClick,
+  formData,
+  setFormData,
+}) => {
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
 
   const handleSuccessRegistration = () => {
+    const parentDetail = {
+      email: formData.email.value,
+      phone: formData.phone.value,
+      password: formData.password.value,
+    };
+    userData.push(parentDetail);
+
     setTimeout(() => {
-      setRegistrationSuccess(!registrationSuccess)  
+      setRegistrationSuccess(!registrationSuccess);
     }, 3000);
-  }
+  };
   return (
     <div className="container flex justify-around mt-4 mb-8">
       <Button
@@ -23,7 +37,7 @@ const StepperControl = ({ steps, currentStep, handleClick }) => {
       </Button>
       {currentStep > steps.length - 1 ? (
         <Button
-          onClick={handleSuccessRegistration }
+          onClick={handleSuccessRegistration}
           className={
             "bg-Rfcyan py-2 px-5 rounded-md hover:bg-Rfcyan2 text-RfWhite transition duration-200 ease-in-out"
           }
@@ -40,14 +54,17 @@ const StepperControl = ({ steps, currentStep, handleClick }) => {
           Next
         </Button>
       )}
-      <Modal show={registrationSuccess} onClose={() => setRegistrationSuccess(false)}>
-            <h1 className="text-3xl">
-              Congratulation! <br /> Registration was successfull
-            </h1>
-            <Link to={"/login"} className="font-bold">
-              Ok
-            </Link>
-          </Modal>
+      <Modal
+        show={registrationSuccess}
+        onClose={() => setRegistrationSuccess(false)}
+      >
+        <h1 className="text-3xl">
+          Congratulation! <br /> Registration was successfull
+        </h1>
+        <Link to={"/"} className="font-bold">
+          Ok
+        </Link>
+      </Modal>
     </div>
   );
 };

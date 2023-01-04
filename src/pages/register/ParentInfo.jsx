@@ -81,11 +81,11 @@ const ParentInfo = ({ formData, setFormData }) => {
           </div>
           <div className="w-2/4">
             <InputField
-              value={formData.address.value}
+              value={formData.password.value}
               onChange={(e) =>
                 setFormData({
                   ...formData,
-                  address: {
+                  password: {
                     value: e.target.value,
                     touched: true,
                     error: !Boolean(e.target.value),
@@ -93,10 +93,10 @@ const ParentInfo = ({ formData, setFormData }) => {
                 })
               }
               className={"border w-full p-1 outline-none "}
-              type="text"
+              type="password"
               placeholder="Street address"
               label={"Address"}
-              error={formData.address.touched && formData.address.error}
+              error={formData.password.touched && formData.password.error}
               errorMessage="please enter address"
               required
             />

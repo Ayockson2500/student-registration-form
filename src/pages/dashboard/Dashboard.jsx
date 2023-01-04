@@ -1,8 +1,5 @@
 import React from "react";
-import InputField from "../../component/input/InputField";
-import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import Button from "../../component/button/Button";
 import NavBar from "../../component/navbar/NavBar";
 import imageHero from "../../assets/img/learning-kids.jpg";
 import { BsArrowRight } from "react-icons/bs";

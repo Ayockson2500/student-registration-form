@@ -1,7 +1,8 @@
 [
     {
-        "email": "ayockdaniel@gmail.com",
+        "email": "example@gmail.com",
         "phone": "08067055630",
-        "password": "rhymes2500"
+        "password": "example2500",
+        "address": "1 benson street surulere"
     }
 ]

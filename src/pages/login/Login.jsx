@@ -1,4 +1,4 @@
-import React, { useState, useContext, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import InputField from "../../component/input/InputField";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link, useNavigate } from "react-router-dom";
@@ -9,7 +9,6 @@ import userData from "../../data.json";
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [errMsg, setErrMsg] = useState('')
   const navigate = useNavigate();
 
   const handleFormSubmit = (e) => {
