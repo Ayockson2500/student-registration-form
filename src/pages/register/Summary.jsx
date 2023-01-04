@@ -3,35 +3,36 @@ import InputField from "../../component/input/InputField";
 import { Link } from "react-router-dom";
 
 const Summary = ({ formData }) => {
+
   return (
     <div className="mt-5">
-      <div className="border p-5">
+      <div className="border p-5 shadow-md">
         <div>
           <h1 className="font-bold text-xl">Parent Info</h1>
           <div className="flex items-center justify-between space-y-2">
-            <p>{formData.fullName}</p>
-            <p>{formData.email}</p>
+            <p>{formData.fullName.value}</p>
+            <p>{formData.email.value}</p>
           </div>
           <div className="flex items-center justify-between space-y-2">
-            <p>{formData.phone}</p>
-            <p>{formData.address}</p>
+            <p>{formData.phone.value}</p>
+            <p>{formData.address.value}</p>
           </div>
         </div>
         <div className="mt-2">
           <h1 className="font-bold text-xl">Child Detail</h1>
-          <p className="font-bold">{formData.numberOfChildren}</p>
+          <p className="font-bold">{formData.numberOfChildren.value}</p>
           <div className="flex items-center justify-between space-y-2">
-            <p>{formData.firstName}</p>
-            <p>{formData.lastName}</p>
+            <p>{formData.firstName.value}</p>
+            <p>{formData.lastName.value}</p>
           </div>
           <div className="flex items-center justify-between space-y-2">
-            <p>{formData.dateOfBirth}</p>
-            <p>{formData.age}</p>
+            <p>{formData.dateOfBirth.value}</p>
+            <p>{formData.age.value}</p>
           </div>
         </div>
       </div>
       <div className="flex items-center space-x-2 mt-1">
-        <InputField type={"checkbox"} className="border" />
+        <InputField type={"checkbox"} className="cursor-pointer" />
         <p className="text-sm">
           By clicking you agree to accepts our{" "}
           <Link className="text-RfOrange" to="">

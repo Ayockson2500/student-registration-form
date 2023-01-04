@@ -60,7 +60,7 @@ const Stepper = ({ steps, currentStep }) => {
   }, [steps, currentStep]);
 
   const displaySteps =newStep.map((step, index) => {
-    console.log(step);
+  
     return (
         <div key={index} className={index !== newStep.length - 1 ? "w-full flex items-center" : " flex items-center" }>
           <div className="relative  flex  flex-col items-center text-teal-600">

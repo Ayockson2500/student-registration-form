@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Forms from "./pages/form/Forms";
+import Dashboard from "./pages/dashboard/Dashboard";
+import Forms from "./pages/register/RegistrationForms";
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
-import Register from "./pages/registration/Register";
+
 
 const App = () => {
   return (
@@ -11,8 +12,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login/>} /> 
-          <Route path="/register" element={<Register/>} /> 
-          <Route path="/forms" element={<Forms />} />
+          <Route path="/dashboard" element={<Dashboard />} /> 
+          <Route path="/register" element={<Forms />} />
         </Routes>
       </Router>
     </div>
