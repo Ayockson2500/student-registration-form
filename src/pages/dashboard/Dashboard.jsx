@@ -41,7 +41,7 @@ const Dashboard = () => {
             <h2 className="cursor-pointer font-bold">Learn</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Asperiores non aliquid soluta aperiam vitae quis distinctio minus
+              Asperiores non aliquid soluta aperiam vitae. quis distinctio minus
               quod minima hic?
             </p>
           </div>
