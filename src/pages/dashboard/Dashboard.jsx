@@ -19,7 +19,7 @@ const Dashboard = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
             non aliquid soluta aperiam. vitae quis distinctio minus quod minima
             hic Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Asperiores non aliquid, soluta aperiam vitae quis distinctio minus
+            Asperiores non aliquid, soluta aperiam vitae, quis distinctio minus
             quod minima hic?
           </p>
           <div className="flex items-center justify-center">
