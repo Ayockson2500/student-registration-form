@@ -17,9 +17,9 @@ const Dashboard = () => {
           <h1 className="text-5xl font-bold">Learning Center for your Kids</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-            non aliquid soluta aperiam vitae quis distinctio minus quod minima
+            non aliquid soluta aperiam. vitae quis distinctio minus quod minima
             hic Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Asperiores non aliquid soluta aperiam vitae quis distinctio minus
+            Asperiores non aliquid, soluta aperiam vitae quis distinctio minus
             quod minima hic?
           </p>
           <div className="flex items-center justify-center">
