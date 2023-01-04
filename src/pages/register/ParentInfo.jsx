@@ -97,7 +97,7 @@ const ParentInfo = ({ formData, setFormData }) => {
               placeholder="password"
               label={"password"}
               error={formData.password.touched && formData.password.error}
-              errorMessage="please enter address"
+              errorMessage="please enter password"
               required
             />
           </div>
