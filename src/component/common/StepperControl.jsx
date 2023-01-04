@@ -61,7 +61,7 @@ const StepperControl = ({
         <h1 className="text-3xl">
           Congratulation! <br /> Registration was successfull
         </h1>
-        <Link to={"/"} className="font-bold">
+        <Link to={"/login"} className="font-bold">
           Ok
         </Link>
       </Modal>

@@ -10,7 +10,7 @@ const Dashboard = () => {
     <div>
       <NavBar />
       <div
-        className="bg-no-repeat bg-cover relative text-center text-white md:p-20 p-4 h-screen"
+        className="bg-no-repeat bg-cover  text-center text-white md:p-20 p-4 h-screen"
         style={{ backgroundImage: `url(${imageHero})` }}
       >
         <div className="space-y-4">

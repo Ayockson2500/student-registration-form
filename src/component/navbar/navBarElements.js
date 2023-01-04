@@ -3,7 +3,7 @@
 export const navbarElementsOne = [
     {
         title: 'Contact Us',
-        url: 'url'
+        url: ''
     },
     {
         title: 'Login',
@@ -17,10 +17,10 @@ export const navbarElementsOne = [
 export const navbarElementsTwo = [
     {
         title: 'About Us',
-        url: 'url'
+        url: ''
     },
     {
         title: 'Contact Us',
-        url: 'url'
+        url: ''
     }
 ]

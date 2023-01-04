@@ -95,7 +95,7 @@ const ParentInfo = ({ formData, setFormData }) => {
               className={"border w-full p-1 outline-none "}
               type="password"
               placeholder="Street address"
-              label={"Address"}
+              label={"password"}
               error={formData.password.touched && formData.password.error}
               errorMessage="please enter address"
               required

@@ -11,7 +11,7 @@ const InputField = ({
   onChange,
   error,
   errorMessage,
-  required
+  required,
 }) => {
   return (
     <div>
@@ -28,7 +28,7 @@ const InputField = ({
         id={id}
         required={required}
       />
-      { error && <p className="text-RfOrange text-xs">{errorMessage}</p>}
+      {error && <p className="text-RfOrange text-xs">{errorMessage}</p>}
     </div>
   );
 };

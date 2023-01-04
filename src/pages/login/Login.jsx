@@ -26,8 +26,8 @@ const Login = () => {
   return (
     <div>
       <NavBar />
-      <div className="flex items-center justify-center md:translate-y-1/4 translate-y-10">
-        <div className="md:w-1/3 border space-y-3 bg-RfWhite py-5 px-5">
+      <div className="flex  items-center justify-center md:translate-y-1/4 translate-y-10">
+        <div className="md:w-1/3 border space-y-3 bg-RfWhite py-5 px-5 relative">
           <div className="float-right border p-1">
             <AiOutlineClose className="cursor-pointer hover:bg-RfOrange3 transition ease-in-out delay-150 hover:text-RfWhite text-RfOrange font-bold" />
           </div>
@@ -48,7 +48,7 @@ const Login = () => {
               label={"password"}
               className={"w-full p-1 border outline-none"}
               placeholder="password"
-              type={'password'}
+              type={"password"}
             />
             <Button
               type={"submit"}

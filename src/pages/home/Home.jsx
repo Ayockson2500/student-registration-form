@@ -10,7 +10,7 @@ const Home = () => {
       <main className="px-9">
         <div className="flex items-center justify-between mt-9">
           <div className="w-1/2 space-y-56 py-9">
-            <h1 className="text-5xl text-RfNavy">
+            <h1 className="md:text-5xl text-RfNavy md:text-none text-xl font-bold md:font-normal text-center md:text-left ">
               Register for the <br /> Holiday Quiz
             </h1>
             <div className="space-x-8">
@@ -32,7 +32,7 @@ const Home = () => {
               </Link>
             </div>
           </div>
-          <div className="w-1/2 flex items-center justify-center">
+          <div className="w-1/2 flex items-center justify-center hidden md:block">
             <img src={heroImage} alt="" />
           </div>
         </div>

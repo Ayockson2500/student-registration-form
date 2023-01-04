@@ -3,17 +3,16 @@ import InputField from "../../component/input/InputField";
 import { Link } from "react-router-dom";
 
 const Summary = ({ formData }) => {
-
   return (
     <div className="mt-5">
       <div className="border p-5 shadow-md">
         <div>
-          <h1 className="font-bold text-xl">Parent Info</h1>
-          <div className="flex items-center justify-between space-y-2">
+          <h1 className="font-bold text-xl">Parent Detail</h1>
+          <div className="md:flex items-center justify-between space-y-2">
             <p>{formData.fullName.value}</p>
             <p>{formData.email.value}</p>
           </div>
-          <div className="flex items-center justify-between space-y-2">
+          <div className="md:flex items-center justify-between space-y-2">
             <p>{formData.phone.value}</p>
             <p>XXXXXXXXXXXX</p>
           </div>
@@ -21,11 +20,11 @@ const Summary = ({ formData }) => {
         <div className="mt-2">
           <h1 className="font-bold text-xl">Child Detail</h1>
           <p className="font-bold">{formData.numberOfChildren.value}</p>
-          <div className="flex items-center justify-between space-y-2">
+          <div className="md:flex items-center justify-between space-y-2">
             <p>{formData.firstName.value}</p>
             <p>{formData.lastName.value}</p>
           </div>
-          <div className="flex items-center justify-between space-y-2">
+          <div className="md:flex items-center justify-between space-y-2">
             <p>{formData.dateOfBirth.value}</p>
             <p>{formData.age.value}</p>
           </div>

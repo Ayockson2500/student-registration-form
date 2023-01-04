@@ -54,7 +54,7 @@ const Forms = () => {
           user.email === formData.email.value ||
           user.phone === formData.phone.value
         ) {
-          alert("Email already exist");
+          alert("Email or phone already exist");
           setTimeout(() => {
             navigate("/login");
           }, 1000);
@@ -70,7 +70,7 @@ const Forms = () => {
     <div>
       <NavBarTwo />
       <main className="flex items-center justify-center translate-y-4 px-2">
-        <div className="md:w-1/2 border max-auto shadow-xl bg-RfWhite p-4">
+        <div className="md:w-1/2 border z-10 max-auto shadow-xl bg-RfWhite p-4">
           <div>
             <h1 className="text-center text-3xl">Registration Form</h1>
           </div>
