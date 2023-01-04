@@ -8,6 +8,7 @@ import Summary from "./Summary";
 import NavBarTwo from "../../component/navbar/NavBarTwo";
 import userData from "../../data.json";
 import { useNavigate } from "react-router-dom";
+import { StepperContext } from "../../context/stepperContext";
 
 const RegistrationForms = () => {
   const [formData, setFormData] = useState({
@@ -79,9 +80,9 @@ const RegistrationForms = () => {
           </div>
 
           <div className="form-wrapper">
-            {/* <StepperContext.Provider value={{}}> */}
+            <StepperContext.Provider value={{}}>
               {displayStep(currentStep)}
-            {/* </StepperContext.Provider> */}
+            </StepperContext.Provider>
           </div>
           <div>
             <StepperControl
