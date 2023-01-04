@@ -9,7 +9,7 @@ import NavBarTwo from "../../component/navbar/NavBarTwo";
 import userData from "../../data.json";
 import { useNavigate } from "react-router-dom";
 
-const Forms = () => {
+const RegistrationForms = () => {
   const [formData, setFormData] = useState({
     firstName: { value: "", touched: false, error: false },
     lastName: { value: "", touched: false, error: false },
@@ -98,4 +98,4 @@ const Forms = () => {
   );
 };
 
-export default Forms;
+export default RegistrationForms;
