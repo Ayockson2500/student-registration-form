@@ -4,7 +4,7 @@ import StepperControl from "../../component/common/StepperControl";
 import ParentInfo from "./ParentInfo";
 import StudentInfo from "./StudentInfo";
 import Summary from "./Summary";
-import { StepperContext } from "../../context/stepperContext";
+// import { StepperContext } from "../../context/stepperContext";
 import NavBarTwo from "../../component/navbar/NavBarTwo";
 import userData from "../../data.json";
 import { useNavigate } from "react-router-dom";
@@ -79,9 +79,9 @@ const RegistrationForms = () => {
           </div>
 
           <div className="form-wrapper">
-            <StepperContext.Provider value={{}}>
+            {/* <StepperContext.Provider value={{}}> */}
               {displayStep(currentStep)}
-            </StepperContext.Provider>
+            {/* </StepperContext.Provider> */}
           </div>
           <div>
             <StepperControl
